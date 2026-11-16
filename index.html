@@ -91,17 +91,7 @@
 <h1>Datenschutzerklärung</h1>
 <div class="slogan">Flash Fahrzeugüberführung – Pünktlich. Sicher. Flash.</div>
 <nav class="links"><a href="impressum.html">Impressum</a> <a href="support.html">Support</a> <a href="nutzungsbedingungen.html">Nutzungsbedingungen</a></nav>
-<p class="stand" style="margin-top:16px;">Stand: 16. August 2026</p>
-
-<div class="hinweisbox">
-  <strong>Hinweis zur Nutzung dieser Vorlage:</strong> Dieser Text wurde auf Basis der tatsächlich in der App
-  „Flash Fahrzeugüberführung" verarbeiteten Daten erstellt und orientiert sich an den Vorgaben der DSGVO.
-  Er ersetzt keine individuelle Rechtsberatung. Vor der Veröffentlichung im App Store sollte diese Seite
-  einmal von einer Anwältin/einem Anwalt für Datenschutzrecht gegengeprüft werden – insbesondere, weil es
-  sich um ein kostenpflichtiges Produkt mit echten Kundendaten handelt. Alle mit
-  <span class="platzhalter">[in eckigen Klammern]</span> markierten Stellen musst du vor Veröffentlichung
-  durch deine echten Angaben ersetzen.
-</div>
+<p class="stand" style="margin-top:16px;">Stand: 16. November 2026</p>
 
 <h2>1. Verantwortlicher</h2>
 <p>
@@ -121,7 +111,9 @@
   Flash Fahrzeugüberführung ist eine App für selbstständige Fahrzeugüberführer zur Planung eigener Aufträge,
   Erfassung von Fahrtkosten und Belegen sowie zum Export dieser Daten für die eigene Buchhaltung. Die App
   verarbeitet ausschließlich Daten, die für diesen Zweck erforderlich sind. Es findet <strong>kein Tracking
-  zu Werbezwecken</strong> statt, und es werden keine Analyse- oder Werbe-SDKs Dritter eingebunden.
+  zu Werbezwecken</strong> statt, und es werden keine Analyse- oder Werbe-SDKs Dritter eingebunden. Die einzige
+  Ortung des Geräts ist die in Ziffer 3.8 beschriebene Streckenaufzeichnung während eines von dir gestarteten
+  Auftrags; sie bleibt vollständig auf deinem Gerät.
 </p>
 
 <h2>3. Welche Daten wir verarbeiten und warum</h2>
@@ -172,7 +164,7 @@
   Wenn du bei einer Fahrt keine Kilometerangabe einträgst und einen eigenen Google-Maps-API-Key hinterlegt
   hast, werden die von dir eingegebenen Start- und Zieladressen zur Distanzberechnung an die Google Routes
   API übertragen. Es handelt sich dabei um reine Ortsangaben (Städte/Adressen), keine Standortdaten deines
-  Geräts. Es gilt die Datenschutzerklärung von Google, siehe Ziffer 5.
+  Geräts (siehe dazu Ziffer 3.8). Es gilt die Datenschutzerklärung von Google, siehe Ziffer 5.
 </p>
 
 <h3>3.6 Google Maps Navigation</h3>
@@ -193,27 +185,71 @@
   (Haufe-Lexware GmbH &amp; Co. KG) bzw. sevDesk (sevdesk GmbH).
 </p>
 
-<h3>3.8 Lokale Speicherung auf deinem Gerät</h3>
+<h3>3.8 Standort und Streckenaufzeichnung (GPS)</h3>
 <p>
-  Fahrten, Ausgaben, Einstellungen und ein Archiv der letzten 6 Monate werden lokal auf deinem iPhone
-  gespeichert, damit die App auch nach dem Schließen und bei erneutem Öffnen deinen Stand behält. Diese
-  Daten verlassen dein Gerät nicht, außer du exportierst sie aktiv (z. B. als CSV-Datei über die
-  Teilen-Funktion von iOS) oder nutzt eine der unter 3.5–3.7 genannten Funktionen.
+  Wenn du in der App einen Auftrag beginnst, zeichnet die App – nach deiner ausdrücklichen Zustimmung zur
+  Standortfreigabe – mit dem GPS deines Geräts die gefahrene Strecke auf, bis du am Ziel „Am Ziel angekommen“
+  antippst. Die Aufzeichnung läuft auch bei gesperrtem Bildschirm bzw. im Hintergrund weiter, damit die Strecke
+  lückenlos erfasst wird; iOS zeigt dabei einen Hinweis auf die Standortnutzung an, Android eine Benachrichtigung.
+  Gespeichert werden Koordinaten mit Zeitstempel und die daraus berechneten gefahrenen Kilometer. Die Daten
+  werden ausschließlich lokal im App-Speicher deines Geräts abgelegt, dem jeweiligen Auftrag zugeordnet und
+  <strong>nicht an uns oder Dritte übertragen</strong>. Außerhalb eines laufenden Auftrags findet keine Ortung statt.
+  Die Standortfreigabe kannst du jederzeit in den Einstellungen deines Geräts widerrufen; die App kann Aufträge
+  dann weiterhin ohne Streckenaufzeichnung nutzen.
 </p>
 
-<h3>3.9 Abonnement (In-App-Kauf)</h3>
+<h3>3.9 Übergabeprotokolle</h3>
 <p>
-  Die App wird über ein Abonnement angeboten, das ausschließlich über Apples In-App-Kauf-System (StoreKit)
-  abgewickelt wird. Zahlungsdaten (z. B. Kreditkartendaten) werden zu keinem Zeitpunkt von uns verarbeitet
-  oder gespeichert – diese verbleiben vollständig bei Apple. Wir erhalten von Apple lediglich die
-  Information, ob ein Abonnement aktiv ist.
+  Für Fahrzeugübernahme und -übergabe kannst du Protokolle erstellen: Kennzeichen, Kilometerstand, Fotos des
+  Fahrzeugs, Schadensvermerke, Namen und Firmen der übergebenden und empfangenden Person sowie deren
+  Unterschriften. Daraus erzeugt die App ein PDF, das ausschließlich lokal auf deinem Gerät gespeichert wird.
+  Es werden keine Daten an uns übertragen. Wenn du ein Protokoll teilst (z. B. per E-Mail an den Auftraggeber),
+  liegt diese Weitergabe in deiner Verantwortung. Soweit im Protokoll personenbezogene Daten Dritter (Name,
+  Unterschrift) enthalten sind, bist du als Nutzer dafür verantwortlich, diese Personen entsprechend zu
+  informieren.
+</p>
+
+<h3>3.10 Rechnungen und Firmendaten</h3>
+<p>
+  Für die Rechnungserstellung trägst du eigene Firmendaten ein (Name, Anschrift, Steuernummer bzw.
+  USt-IdNr., Telefon, E-Mail, Bankverbindung/IBAN) sowie Name und Anschrift des Rechnungsempfängers
+  (Auftraggeber). Diese Angaben, ein Adressbuch bereits verwendeter Auftraggeber und die erzeugten
+  Rechnungs-PDFs (inkl. angehängter Beleg-Fotos und Protokolle) werden ausschließlich lokal auf deinem Gerät
+  gespeichert und nicht an uns übertragen. Wenn du eine Rechnung teilst oder versendest, liegt die
+  Weitergabe in deiner Verantwortung. Gesetzliche Aufbewahrungsfristen für Rechnungen hast du selbst
+  einzuhalten; die App löscht Rechnungen nicht automatisch.
+</p>
+
+<h3>3.11 Monatsexport</h3>
+<p>
+  In den Einstellungen kannst du einen Monatsexport (ZIP-Datei mit Auftrags- und Belegübersicht sowie
+  Beleg-Fotos) erstellen und über das Teilen-Menü deines Geräts weitergeben, z. B. an deinen Steuerberater.
+  Die Datei wird lokal erzeugt; wohin du sie sendest, entscheidest du.
+</p>
+
+<h3>3.12 Lokale Speicherung auf deinem Gerät</h3>
+<p>
+  Fahrten, Ausgaben, Beleg-Fotos, aufgezeichnete Strecken, Protokolle, Rechnungen, Firmendaten, Einstellungen
+  und ein Archiv der letzten 6 Monate werden lokal auf deinem Gerät gespeichert, damit die App auch nach dem
+  Schließen und bei erneutem Öffnen deinen Stand behält. Diese Daten verlassen dein Gerät nicht, außer du
+  exportierst oder teilst sie aktiv (z. B. CSV, Monatsexport, PDF über die Teilen-Funktion) oder nutzt eine der
+  unter 3.5–3.7 genannten Funktionen.
+</p>
+
+<h3>3.13 Einmaliger In-App-Kauf</h3>
+<p>
+  Die vollständige App wird über einen einmaligen In-App-Kauf freigeschaltet, der ausschließlich über Apples
+  In-App-Kauf-System (StoreKit) abgewickelt wird; es gibt kein Abonnement. Zahlungsdaten (z. B.
+  Kreditkartendaten) werden zu keinem Zeitpunkt von uns verarbeitet oder gespeichert – diese verbleiben
+  vollständig bei Apple. Wir erhalten von Apple lediglich die Information, ob der Kauf besteht.
 </p>
 
 <h2>4. Rechtsgrundlagen der Verarbeitung</h2>
 <table>
   <tr><th>Verarbeitung</th><th>Rechtsgrundlage (DSGVO)</th></tr>
   <tr><td>Anmeldung, Kernfunktionen der App</td><td>Art. 6 Abs. 1 lit. b (Vertragserfüllung)</td></tr>
-  <tr><td>Kalender-, Kamera- und Zwischenablage-Zugriff</td><td>Art. 6 Abs. 1 lit. a (Einwilligung durch Berechtigungserteilung)</td></tr>
+  <tr><td>Standort (Streckenaufzeichnung), Kalender-, Kamera- und Zwischenablage-Zugriff</td><td>Art. 6 Abs. 1 lit. a (Einwilligung durch Berechtigungserteilung)</td></tr>
+  <tr><td>Übergabeprotokolle, Rechnungen, Monatsexport (lokale Verarbeitung)</td><td>Art. 6 Abs. 1 lit. b (Vertragserfüllung)</td></tr>
   <tr><td>Optionale Buchhaltungs-Exporte</td><td>Art. 6 Abs. 1 lit. a (Einwilligung durch aktive Nutzung)</td></tr>
   <tr><td>Fehlerbehebung, Sicherheit</td><td>Art. 6 Abs. 1 lit. f (berechtigtes Interesse)</td></tr>
 </table>
@@ -223,7 +259,7 @@
 <table>
   <tr><th>Anbieter</th><th>Zweck</th><th>Datenschutzerklärung</th></tr>
   <tr><td>Google Ireland Limited</td><td>Google-Anmeldung, Google Routes API, Google Maps, Google Kalender</td><td>policies.google.com/privacy</td></tr>
-  <tr><td>Apple Distribution International</td><td>Apple-Anmeldung, App-Store-Abo, iCloud-Kalender</td><td>apple.com/legal/privacy</td></tr>
+  <tr><td>Apple Distribution International</td><td>Apple-Anmeldung, App-Store-Kauf, iCloud-Kalender</td><td>apple.com/legal/privacy</td></tr>
   <tr><td>Haufe-Lexware GmbH &amp; Co. KG</td><td>lexoffice-Export (nur bei aktiver Nutzung)</td><td>lexoffice.de/datenschutz</td></tr>
   <tr><td>sevdesk GmbH</td><td>sevDesk-Export (nur bei aktiver Nutzung)</td><td>sevdesk.de/datenschutz</td></tr>
 </table>
@@ -240,6 +276,8 @@
   Fahrten und Belege werden lokal auf deinem Gerät für maximal 6 Monate archiviert und danach automatisch
   gelöscht. Anmeldedaten bleiben gespeichert, bis du dich in der App abmeldest. Beleg-Fotos werden mit dem
   zugehörigen Beleg nach spätestens 6 Monaten gelöscht; Bilder zur Auftrags-Erkennung sofort nach der Auswertung.
+  Aufgezeichnete Strecken werden mit dem zugehörigen Auftrag spätestens nach 6 Monaten gelöscht. Übergabeprotokolle
+  und Rechnungen (PDF) bleiben auf deinem Gerät, bis du sie selbst oder über „Konto und Daten löschen“ entfernst.
 </p>
 
 <h2>8. Deine Rechte</h2>
@@ -247,9 +285,9 @@
 <ul>
   <li>Auskunft über die zu deiner Person gespeicherten Daten (Art. 15 DSGVO)</li>
   <li>Berichtigung unrichtiger Daten (Art. 16 DSGVO)</li>
-  <li>Löschung deiner Daten (Art. 17 DSGVO) – lokal gespeicherte Daten kannst du jederzeit direkt in der App löschen (Konto abmelden, Ausgaben/Fahrten entfernen)</li>
+  <li>Löschung deiner Daten (Art. 17 DSGVO) – lokal gespeicherte Daten kannst du jederzeit direkt in der App löschen (Einstellungen → „Konto und Daten löschen“ bzw. einzelne Fahrten, Belege, Protokolle und Rechnungen entfernen)</li>
   <li>Einschränkung der Verarbeitung (Art. 18 DSGVO)</li>
-  <li>Datenübertragbarkeit (Art. 20 DSGVO) – z. B. über die CSV-Exportfunktion der App</li>
+  <li>Datenübertragbarkeit (Art. 20 DSGVO) – z. B. über die CSV-Export- und Monatsexport-Funktion der App</li>
   <li>Widerspruch gegen die Verarbeitung (Art. 21 DSGVO)</li>
   <li>Beschwerde bei einer Datenschutz-Aufsichtsbehörde deiner Wahl</li>
 </ul>
