@@ -91,7 +91,7 @@
 <h1>Datenschutzerklärung</h1>
 <div class="slogan">Flash Fahrzeugüberführung – Pünktlich. Sicher. Flash.</div>
 <nav class="links"><a href="impressum.html">Impressum</a> <a href="support.html">Support</a> <a href="nutzungsbedingungen.html">Nutzungsbedingungen</a></nav>
-<p class="stand" style="margin-top:16px;">Stand: 16. November 2026</p>
+<p class="stand" style="margin-top:16px;">Stand: 25. November 2026</p>
 
 <h2>1. Verantwortlicher</h2>
 <p>
@@ -193,7 +193,8 @@
   lückenlos erfasst wird; iOS zeigt dabei einen Hinweis auf die Standortnutzung an, Android eine Benachrichtigung.
   Gespeichert werden Koordinaten mit Zeitstempel und die daraus berechneten gefahrenen Kilometer. Die Daten
   werden ausschließlich lokal im App-Speicher deines Geräts abgelegt, dem jeweiligen Auftrag zugeordnet und
-  <strong>nicht an uns oder Dritte übertragen</strong>. Außerhalb eines laufenden Auftrags findet keine Ortung statt.
+  <strong>nicht an uns übertragen</strong>; die einzelnen Streckenpunkte erhalten auch keine Dritten (zum
+  Kartenbild siehe Ziffer 3.8a). Außerhalb eines laufenden Auftrags findet keine Ortung statt.
   Die Streckenaufzeichnung ist für <strong>Direktaufträge</strong> (Aufträge mit eigenem Auftraggeber, die du in
   der App fährst und abrechnest) erforderlich: Ohne eingeschaltete Aufzeichnung kann ein solcher Auftrag nicht
   begonnen und keine Rechnung dafür erstellt werden; Unterbrechungen werden mit Zeitraum im Protokoll und auf der
@@ -201,6 +202,20 @@
   verlangt, diese werden über die App des jeweiligen Portals abgewickelt. Die Standortfreigabe kannst du
   jederzeit in den Einstellungen deines Geräts widerrufen; Aufträge über Portale kannst du dann weiterhin
   ohne Streckenaufzeichnung nutzen.
+</p>
+
+<h3>3.8a Kartenbild der gefahrenen Strecke (Apple Karten)</h3>
+<p>
+  Für das Übergabeprotokoll und die Rechnungsanlage „Fahrtstrecke“ kann die App ein Kartenbild der gefahrenen
+  Strecke erzeugen. Auf dem iPhone geschieht das mit <strong>Apple Karten</strong> (MapKit): Die App fragt bei
+  Apple nur den <strong>Kartenausschnitt</strong> des Gebiets an, in dem die Strecke liegt. Die einzelnen
+  Streckenpunkte, Zeitstempel, Kilometer, Kennzeichen oder Auftragsdaten werden dabei nicht übermittelt; die
+  Strecke wird erst auf deinem Gerät in das Kartenbild eingezeichnet. Apple erfährt über die Kartenanfrage
+  allerdings die ungefähre Gegend (Kartenausschnitt) und, wie bei jeder Internetverbindung, die IP-Adresse
+  deines Geräts. Es gilt die Datenschutzerklärung von Apple, siehe Ziffer 5. Das fertige Kartenbild wird
+  ausschließlich lokal auf deinem Gerät zwischengespeichert, dem Auftrag zugeordnet und mit dem Auftrag gelöscht.
+  Ohne Internetverbindung, unter Android oder bei einem Fehler entsteht kein Kartenbild; dann wird die Strecke
+  als einfache Linie ohne Karte dargestellt.
 </p>
 
 <h3>3.9 Übergabeprotokolle</h3>
@@ -254,7 +269,7 @@
   <tr><th>Verarbeitung</th><th>Rechtsgrundlage (DSGVO)</th></tr>
   <tr><td>Anmeldung, Kernfunktionen der App</td><td>Art. 6 Abs. 1 lit. b (Vertragserfüllung)</td></tr>
   <tr><td>Standort (Streckenaufzeichnung bei Direktaufträgen), Kalender-, Kamera- und Zwischenablage-Zugriff</td><td>Art. 6 Abs. 1 lit. a (Einwilligung durch Berechtigungserteilung)</td></tr>
-  <tr><td>Übergabeprotokolle, Rechnungen, Monatsexport (lokale Verarbeitung)</td><td>Art. 6 Abs. 1 lit. b (Vertragserfüllung)</td></tr>
+  <tr><td>Übergabeprotokolle, Rechnungen, Monatsexport (lokale Verarbeitung), Kartenbild der Strecke über Apple Karten</td><td>Art. 6 Abs. 1 lit. b (Vertragserfüllung)</td></tr>
   <tr><td>Optionale Buchhaltungs-Exporte</td><td>Art. 6 Abs. 1 lit. a (Einwilligung durch aktive Nutzung)</td></tr>
   <tr><td>Fehlerbehebung, Sicherheit</td><td>Art. 6 Abs. 1 lit. f (berechtigtes Interesse)</td></tr>
 </table>
@@ -264,7 +279,7 @@
 <table>
   <tr><th>Anbieter</th><th>Zweck</th><th>Datenschutzerklärung</th></tr>
   <tr><td>Google Ireland Limited</td><td>Google-Anmeldung, Google Routes API, Google Maps, Google Kalender</td><td>policies.google.com/privacy</td></tr>
-  <tr><td>Apple Distribution International</td><td>Apple-Anmeldung, App-Store-Kauf, iCloud-Kalender</td><td>apple.com/legal/privacy</td></tr>
+  <tr><td>Apple Distribution International</td><td>Apple-Anmeldung, App-Store-Kauf, iCloud-Kalender, Kartenausschnitt für das Kartenbild der Strecke (Apple Karten)</td><td>apple.com/legal/privacy</td></tr>
   <tr><td>Haufe-Lexware GmbH &amp; Co. KG</td><td>lexoffice-Export (nur bei aktiver Nutzung)</td><td>lexoffice.de/datenschutz</td></tr>
   <tr><td>sevdesk GmbH</td><td>sevDesk-Export (nur bei aktiver Nutzung)</td><td>sevdesk.de/datenschutz</td></tr>
 </table>
